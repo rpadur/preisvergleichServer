@@ -1,0 +1,2 @@
+# preisvergleichServer
+Server zum Preisvergleich
