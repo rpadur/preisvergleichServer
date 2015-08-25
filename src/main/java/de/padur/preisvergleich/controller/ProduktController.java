@@ -9,14 +9,12 @@ import java.util.List;
 import javax.validation.Valid;
 
 import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
-import org.springframework.web.bind.annotation.RestController;
 
 import de.padur.preisvergleich.bo.Produkt;
 
@@ -24,8 +22,9 @@ import de.padur.preisvergleich.bo.Produkt;
  * @author ronald.padur
  *
  */
-@RestController
-@RequestMapping(value = "/produkte", produces = MediaType.APPLICATION_JSON_VALUE)
+// @RestController
+// @RequestMapping(value = "/produkte", produces =
+// MediaType.APPLICATION_JSON_VALUE)
 public class ProduktController {
 
 	private List<Produkt> testprodukte;
@@ -76,7 +75,7 @@ public class ProduktController {
 	}
 
 	/**
-	 * Löscht ein Produkt
+	 * Lï¿½scht ein Produkt
 	 * 
 	 * @param id
 	 */
@@ -99,7 +98,7 @@ public class ProduktController {
 
 	private List<Produkt> createTestProdukte() {
 		final Produkt produkt1 = new Produkt(1, "Bananen", 199);
-		final Produkt produkt2 = new Produkt(2, "Kokosöl", 2000);
+		final Produkt produkt2 = new Produkt(2, "Kokosï¿½l", 2000);
 
 		final Produkt produkt3 = new Produkt(3, "Head&Shoulders", 499);
 		final Produkt produkt4 = new Produkt(4, "Mandeln", 199);
